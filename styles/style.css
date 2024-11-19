@@ -15,6 +15,7 @@
 body {
     background-color: var(--cor-primaria);
     box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
 }
 
 .cabecalho {
@@ -30,7 +31,7 @@ body {
     gap: 40px;
 }
 
-.cabecalho__link {
+.cabecalho a {
     text-decoration: none;
     color: var(--cor-secundaria);
     font-size: 1.57rem;
@@ -105,6 +106,10 @@ body {
 }
 
 .rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
     padding: 1.25rem;
     color:var(--cor-primaria);
     background-color: var(--cor-secundaria);
@@ -113,7 +118,41 @@ body {
     font-size: 1.57rem;
     font-weight: 400;
 }
+.sobreMim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid var(--cor-secundaria);
+    width: 700px;
+    gap: 30px;
+    border-radius: 30px;
+    padding: 30px;
+}
 
+.sobreMim h1 {
+    font-size: 50px;
+    text-align: center;
+    color: var(--cor-secundaria);
+}
+.sobreMim p {
+    font-size: 30px;
+    color: var(--cor-terciaria);
+}
+.sobreMim img {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 150px;
+}
+.textoSobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    max-width: 300px;
+}
 
 @media (max-width: 880px) {
     .cabecalho {
@@ -139,5 +178,16 @@ body {
     h1 {
         display: flex;
         justify-content: center;
+    }
+
+    .sobreMim {
+        width: 400px;
+    }
+
+    .sobreMim h1 {
+        font-size: 30px;
+    }
+    .sobreMim p {
+        font-size: 15px;
     }
 }

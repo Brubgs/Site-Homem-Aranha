@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=DM+Serif+Display&family=Outfit:wght@300&family=Teko:wght@300;400&display=swap');
+
+:root {
+    --cor-primaria:rgb(3, 0, 17);
+    --cor-secundaria:rgb(134, 4, 4);
+    --cor-terciaria:rgb(228, 218, 218);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    color: var(--cor-secundaria);
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    padding: 3% 0% 0% 5%;
+    gap: 40px;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho__link {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-size: 1.57rem;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    padding: 4% 5% 7% 5%;
+    gap: 50px;
+}
+
+.conteudo__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--cor-terciaria);
+    font-size: 1.125rem;
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+.conteudo__titulo {
+    font-size: 3.75rem;
+    color: var(--cor-secundaria);
+    font-family: 'Teko', sans-serif;
+}
+
+.conteudo__informacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 4% 10% 4%;
+    gap: 10px;
+}
+
+.conteudo__informacoes__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.botoes__personalizacao {
+    display: flex;
+    justify-content: center;
+    background-color:var(--cor-secundaria);
+    text-decoration: none;
+    color: var(--cor-primaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 16px;
+    padding: 21.5px 0;
+    font-family:'Teko', sans-serif;
+    font-size: 1.57rem;
+}
+
+.botoes__personalizacao:hover {
+    background-color: var(--cor-primaria);
+    color:var(--cor-secundaria);
+    border: 3px solid;
+}
+
+.imagens {
+    width: 50%;
+}
+
+.rodape {
+    padding: 1.25rem;
+    color:var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family:'Teko', sans-serif;
+    font-size: 1.57rem;
+    font-weight: 400;
+}
+
+
+@media (max-width: 880px) {
+    .cabecalho {
+        padding: 6%;
+    }
+
+    .cabecalho__menu {
+        justify-content:center;
+    }
+    
+    .conteudo {
+        flex-direction: column-reverse;
+    }
+
+    .conteudo__textos {
+        width: auto;
+    }
+
+    .conteudo__informacoes {
+        flex-direction: column-reverse;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+}
